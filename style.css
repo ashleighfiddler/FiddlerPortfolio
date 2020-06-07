@@ -1,57 +1,102 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 20px;
-    
+    height: 100%;    
 }
-header {
-    /* background-color: aqua; */
+/* header {
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+    align-items: flex-end;    
     border-bottom: 2px solid black;
+} */
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;    
+    overflow-x: hidden;
     
 }
+
 .logo {
-    padding-top: 5%
+    margin: 10px;
+    max-height: 100px;
 }
- nav {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     /* background-color: cadetblue; */
-     height: 60px; 
-     color: rgb(183,184,58);
-     margin: 40px ;
-     
-     
- }
- nav a {
-     color: rgb(183,184,58);
-     font-size: 18pt;
-     padding: 40px 60px;
- }
- 
- section {
-    padding: 50px;
-    display: flex;     
-    justify-content: center;
-    width: auto;
-      
- 
- }
- .hero {
-     /* padding-left: 45%; */
-     padding: 40px;
-     background-color: whitesmoke;
-     opacity: .5;
-     height: 400px;
+.bar {
+    width: 120px;
+    height: 1px;
+    background-color: rgb(32, 32, 32);
+    margin: 6px 0;
+}
+nav {
      display: flex;
      flex-direction: column;
-     justify-content: center;
+     align-items: center;
+    margin-bottom: 100px;     
+ }
+
+ nav a {
+     color: rgb(0, 0, 0);
+     font-size: 12pt;  
      
  }
+ nav a:hover {
+    color: rgb(155, 155, 155);
+    font-size: 16pt;
+   
+}
+
+main {
+    padding-left: 200px;
+}
+
+.parallaxmainpage {
+    height: 100px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2%;
+    min-height: 500px;
+
+  
+  }   
+  .one {
+    background-image: url(images/design3.JPG);   
+  }
+  .two {
+    background-image: url(images/designer2.jpg);
+   
+  }   
+  .three {
+    background-image: url(images/Two\ Sticks.jpg);    
+    
+  } 
+  
+
+  .parallaxtext {
+    display: flex;    
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(5, 101, 114, 0.527);
+    font-size:20pt;
+    height: 60px;
+    width: 100%;
+    color:#ffffff;
+    
+}
+
 
 
  ul {
@@ -59,8 +104,7 @@ header {
     
 }
 button {
-    background-color: rgb(183,184,58);
-  
+    background-color: rgb(183,184,58);  
     margin-top: 60%;
 
 }
@@ -74,49 +118,52 @@ button {
 }
 .galleryimage {    
     margin: 10px;
+    transition: all 1s ease-out 250ms;
+    
+}
+
+.galleryimage:hover {
+    transform: scale(1.125)
+    
 }
 
 
-footer {
-    background-color: rgb(183,184,58);
+footer {    
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 200px;
     
 }
 
 
 .icon {
-    height: 40px;
-    margin: 5px;
+    height: 20px;
+    
 
 }
 .smalltext {
-    margin: 20px;
-    padding: 20px;
+    font-size: 12px;
+    
+
 }
 
 
 @media screen and (min-width: 300px) {
-    .heroimage { 
-    background-image: url(images/heroimage.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; 
-
-    }
+   
 
     section {
         justify-content: flex-end;
         text-align: center;
     }
 
-    footer{
+    .footer {
         justify-content: space-between;
     }
 
     .icons {
-    margin: 20px;
+    margin: 10px;
     padding: 2px;
     }
 }
@@ -135,16 +182,13 @@ footer {
     display: none;
 }
    
-.gallery {
-   background-color: rgba(184, 184, 58, 0.322)  
-}
 
 
 
 nav div {
-    width: 35px;
-    height: 5px;
-    background-color: rgb(183,184,58);
+    width: 30px;
+    height: 3px;
+    background-color: rgb(32, 32, 32);
     margin: 6px 0;
   
       }
@@ -157,7 +201,7 @@ section div {
         flex-direction: column;
         justify-content: space-evenly;
     }   
-    footer{
+    footer b{
         justify-content: center;
     }     
 }
