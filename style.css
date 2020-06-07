@@ -1,16 +1,8 @@
-body {
+body, html {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 20px;
     height: 100%;    
 }
-/* header {
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;    
-    border-bottom: 2px solid black;
-} */
 
 .sidenav {
   display: flex;
@@ -46,63 +38,67 @@ nav {
  }
 
  nav a {
-     color: rgb(0, 0, 0);
+     color: rgb(5, 101, 114);
      font-size: 12pt;  
      
  }
  nav a:hover {
-    color: rgb(155, 155, 155);
+    color: rgb(32, 170, 189);
     font-size: 16pt;
    
 }
 
 main {
     padding-left: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.about {
+    width: 600px;
+    padding-top: 15px;
+}
+
+.aboutimage {
+    padding-top: 40px;
 }
 
 .parallaxmainpage {
-    height: 100px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    margin: 2%;
-    min-height: 500px;
-
+    background-size: cover;   
+    
+    
+}
   
-  }   
+
   .one {
-    background-image: url(images/design3.JPG);   
+    background-image: url(images/design3.JPG);
+       
   }
   .two {
-    background-image: url(images/designer2.jpg);
-   
+    background-image: url(images/designer2.jpg);   
   }   
   .three {
-    background-image: url(images/Two\ Sticks.jpg);    
-    
+    background-image: url(images/prelude.jpg);        
   } 
   
 
-  .parallaxtext {
-    display: flex;    
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
+  .parallaxtext {      
     background-color: rgba(5, 101, 114, 0.527);
-    font-size:20pt;
-    height: 60px;
-    width: 100%;
-    color:#ffffff;
+    font-size:20pt;     
+    color:#ffffff;  
     
 }
-
-
 
  ul {
-    list-style-type: none;
-    
+    list-style-type: none;    
 }
+
 button {
     background-color: rgb(183,184,58);  
     margin-top: 60%;
